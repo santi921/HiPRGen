@@ -264,6 +264,8 @@ class rxn_networks_graph:
         self.data["label"] = torch.Tensor([rxn['dG']]) 
         self.data["reverse_lable"] = torch.Tensor([0]) #TODO
         self.data["extra_info"] = {} #TODO
+        self.data["mappings"] = mappings
+        self.data["has_bonds"] = has_bonds
 
 
         # # # print(f"rxn_graph: {rxn_graph}")
